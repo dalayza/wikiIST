@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<title>WikiSIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="min/w3.css">
+    <link rel="stylesheet" href="min/googleapis.css">
+    <link rel="stylesheet" href="min/font.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+<body>
+
+
+    <!-- Navbar (top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small">INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+                <a href="SiaVisual.html" class="w3-bar-item w3-button">SiaVisual</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd.html" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+    <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button"><i class=""></i> INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd.html" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Logo -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WikiSIA</span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">ACERCA DE</h3>
+      <p class="w3-center"><em>Medios e instrumentos de pago</em></p>
+      <p class="w3-justify">Los medios de pago son un conjunto de herramientas que sirven para realizar el pago de transacciones económicas entre los diferentes agentes económicos, evitando que se tenga que emplear dinero físico (monedas y billetes).</p>
+      <p>Los principales instrumentos a través de nuestro front autorizador SIA (Sistema Integrado de Autorizaciones) son las tarjetas de crédito que viajan a traves de las franquicias Visa, Mastercard y Consorcio Credicard, siendo así, un canal que engloba el flujo de procesamiento transaccional tanto de operaciones nacionales e internacionales.</p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p><b><i class="fa fa-user w3-margin-right"></i>Sistema de Autorizaciones</b></p><br>
+          <img src="imagenes/SIA1.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SistAuth" width="500" height="333">
+        </div>
+
+
+        <!-- Esconder este texto cuando el dispositivo es pequeño -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large" style="text-align:justify;">
+          <p class="w3-justify">Sistema mundial de procesamiento, diseñado para facilitar la distribución/respuesta de una solicitud de autorización al emisor o una franquicia en nombre de un usuario desde un comercio.</p>
+          <p class="w3-justify"><strong>Como principales beneficios tiene lo siguiente:</strong></p>
+          <p class="w3-justify">- Disponibilidad mundial</p>
+          <p class="w3-justify">- Altamente confiable</p>
+          <p class="w3-justify">- Procesamiento rápido y exacto</p>
+          <p class="w3-justify">- Variedad de servicios para apoyar funciones, comerciales y de control de riesgos.</p>
+        </div>
+      </div>
+      <p class="w3-large w3-center w3-padding-16">Principales conexiones FRONT END con sus respectivos porcentajes de aprobación</p>
+      <p class="w3-wide"><i class="fa fa-cc-mastercard"></i>Mastercard</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-cc-visa"></i>Visa</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-cc-stripe"></i>Consorcio Credicard</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+    </div>
+
+
+    <!-- Items -->
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">+</span><br>
+        Releases
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">+</span><br>
+        Proyectos
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">+</span><br>
+        Requerimientos
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">+</span><br>
+        Incidencias
+      </div>
+    </div>
+
+
+    <!-- Segundo Parallax -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section Portafolio) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      <h3 class="w3-center">INVOLUCRADOS</h3>
+      <p class="w3-center"><em>Partes involucradas en una transacción.<br> Click aqui para agrandar la imagen</em></p><br>
+
+
+  <!-- Responsive Grid -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m4">
+          <img src="imagenes/tarjetaHabiente.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="tarjetaHabiente">
+        </div>
+
+        <div class="w3-col m4">
+          <img src="imagenes/puntoInteraccion.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="puntoInteraccion">
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m4">
+          <img src="imagenes/adquiriente.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="adquiriente">
+        </div>
+        <div class="w3-col m4">
+            <img src="imagenes/emisor.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="emisor">
+        </div>
+        <div class="w3-col m4">
+          <img src="imagenes/host.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="host">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal para colocar la imagen full size-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+
+    <!-- Tercer Parallax -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+         <span class="w3-xxlarge w3-text-white w3-wide">CONTACTANOS</span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section de COntacto) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">CONTACTANOS</h3>
+      <p class="w3-center"><em>feedback!</em></p>
+
+
+       <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m6 w3-container">
+
+
+      <!-- Agregar a Google Maps -->
+    <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+        </div>
+        <div class="w3-col m6 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Caracas, VE<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefono: +58 416.936.39.85 / +58 <br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: denis.alayza@banvenez.com<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>SUBIR</a>
+      <p>Elaborado por Denis Alayza</p>
+    </footer>
+
+
+    <!-- Agregar a Google Maps -->
+    <script>
+    function myMap()
+    {
+      myCenter=new google.maps.LatLng(10.504751, -66.914042);
+      var mapOptions= {
+        center:myCenter,
+        zoom:12, scrollwheel: false, draggable: false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+      var marker = new google.maps.Marker({
+        position: myCenter,
+      });
+      marker.setMap(map);
+    }
+
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Cambio de estilo del navbar
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-bar w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+
+    // Use del toggle en menu pequeño en dispositivos moviles
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+
+    <!-- Use ID google -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3YGYGHlAiBqtpaRvmvQ6yuuAntBY0RRs&callback=myMap"></script>
+
+
+</body>
+</html>

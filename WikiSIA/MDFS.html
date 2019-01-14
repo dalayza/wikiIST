@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<title>Mastercard Debit Finantial Switch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="min/w3.css">
+    <link rel="stylesheet" href="min/googleapis.css">
+    <link rel="stylesheet" href="min/font.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+<body>
+
+
+    <!-- Navbar (top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small">INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+                <a href="SiaVisual.html" class="w3-bar-item w3-button">SiaVisual</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+
+    <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button"><i class=""></i> INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd.html" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Logo -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-small">Mastercard Debit Finantial Switch</span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-large">MDFS</span>
+      </div>
+    </div>
+
+
+    <!-- Container 1 (Section) -->
+    <div class="container">
+          <br>
+              <h3 class="w3-center">Visa Test System</h3>
+              <a href="#seccionPpal" class="btn btn-primary" data-toggle="collapse">1.- Conexión del VTS.</a>
+              <div class="collapse" id="seccionPpal">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Es nuestro aplicativo Visual SIA en el cual podemos visualizar y monitorear todo la funcionalidad o procesamiento que ejecuta SIA en sus diferentes ámbitos.</p>
+                    <p class="w3-justify">Para ello, se muestra un entorno visual en el cual dependiente del perfilamiento del usuario a ingresa, va a poder accesar a un conjunto de parámetros e información tanto del sistema como de las autorizaciones.</p>
+                    <p class="w3-justify">A continuación, se muestra la aplicación PAMPA-SIA Visual desde el origen:</p>
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>PAMPA-SIA Visual</b></p><br>
+                          <img src="imagenes/usuario/PAMPA-SIA%20-%20Principal.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Rutinas del Área Usuaria">
+                        </div>
+                    </div>
+                    <p class="w3-justify">SIA maneja desde el módulo del adquiriente donde se encuentra ejecutándose la transacción, llegando al nucleo de SIA que es el módulo Gestor de Operaciones (MGO) y finalmente enviando la operaciones hacia el Mainframe desde el módulo SIA-SAT.</p>
+                  </div>
+              </div>
+    <br><br>
+
+
+    <!-- Container 2 (Section) -->
+              <a href="#seccionConTJT" class="btn btn-primary" data-toggle="collapse">2.- Consulta del Estado de TDC.</a>
+              <div class="collapse" id="seccionConTJT">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Para poder realizar la consulta del estado de la tarjeta en el eplicativo SIA, se puede realizar a través de las siguientes opciones:</p>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/5%20-%201.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Consulta del Estado de TDC">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/5%20-%202.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Consulta del Estado de TDC">
+                        </div>
+                        <p class="w3-justify">De igual forma, en la misma opción se puede tanto modificar como eliminar el BIN.<.</p>
+                        <p class="w3-justify">Para realizar la modificación o creación y tener dudas, se puede realizar la consulta de otro BIN y tomarlo como guía.<.</p>
+                  </div>
+              </div>
+    <br><br>
+
+    <!-- Container 3 (Section) -->
+              <a href="#seccionSeg" class="btn btn-primary" data-toggle="collapse">3.- Seguimiento de Operaciones.</a>
+              <div class="collapse" id="seccionSeg">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Se le puede dar seguimiento detallado de las operaciones en el orden de como viaja la transacción por cada módulo dentro del sistema:</p>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/10%20-%201.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Seguimiento de Operaciones">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/10%20-%202.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Seguimiento de Operaciones">
+                        </div>
+                        <p class="w3-justify">Dicha transacción de realiza su búsqueda de acuerdo a tres aristas:</p>
+                        <p class="w3-justify"><strong>- Elemento Origen: </strong>es el número del módulo donde se encuentra viajando la transacción.</p>
+                        <p class="w3-justify"><strong>- Número de Sesión del Elemento: </strong>es el número de sesión donde se encuentra actualmente el <i>Cambio de Sesión.</i></p>
+                        <p class="w3-justify"><strong>- Último Número de Operación: </strong>es un número consecutivo</p>
+                  </div>
+              </div>
+    <br><br>
+
+    <!-- Container 4 (Section) -->
+              <a href="#seccionMonMod" class="btn btn-primary" data-toggle="collapse">4.- Monitoreo de Operaciones por Módulo.</a>
+              <div class="collapse" id="seccionMonMod">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Se puede ver las operaciones que pasan por dicho módulo y el detalle de las mismas, a continuación el paso paso para lograr visualizar las operaciones:</p>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/11%20-%201.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Monitoreo de Operaciones por Módulo">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/11%20-%202.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Monitoreo de Operaciones por Módulo">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/11%20-%203.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Monitoreo de Operaciones por Módulo">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/11%20-%204.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Monitoreo de Operaciones por Módulo">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/11%20-%205.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Monitoreo de Operaciones por Módulo">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/11%20-%206.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Monitoreo de Operaciones por Módulo">
+                        </div>
+                        <p class="w3-justify">Dicho código se realiza la conversión de acuerdo al código de resolución informada por el Mainframe.</p>
+                  </div>
+              </div>
+    <br><br>
+
+    <!-- Container 5 (Section) -->
+              <a href="#seccionSign" class="btn btn-primary" data-toggle="collapse">5.- Sign on/off.</a>
+              <div class="collapse" id="seccionSign">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Para realizar el sig on/off de acuerdo al módulo, se logra a través de los siguientes pasos:</p>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/PAMPA-SIA%20-%20Principal.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Sign on/off">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <img src="imagenes/usuario/12%20-%201.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Resoluciones SIA">
+                        </div>
+                        <p class="w3-justify">Dichos pasos se aplica para cualquier módulo señalado en el PAMPA-SIA Visual.</p>
+                  </div>
+              </div>
+    <br><br>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>SUBIR</a>
+      <p>Elaborado por Denis Alayza</p>
+    </footer>
+
+
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Cambio de estilo del navbar
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+    // Use del toggle en menu pequeño en dispositivos moviles
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <script src="css/bootstrap.min.js"></script>
+
+
+</body>
+</html>

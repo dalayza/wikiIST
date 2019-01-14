@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<title>SIA Producción</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="min/w3.css">
+    <link rel="stylesheet" href="min/googleapis.css">
+    <link rel="stylesheet" href="min/font.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+<body>
+
+
+    <!-- Navbar (top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small">INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+                <a href="SiaVisual.html" class="w3-bar-item w3-button">SiaVisual</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+
+    <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button"><i class=""></i> INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd.html" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Logo -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-small">SIA Producción</span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-large">SIA Prod</span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">SIA Producción</h3>
+      <p class="w3-justify">El aplicativo SIA ambiente de Producción, es el ambiente final donde la aplicación SIA dá el servicio al cliente.</p>
+      <p class="w3-justify">Cabe destacar que el ambiente donde se ejecuta todos los procesos batch o procesos que se encuentran cargados en las tareas programadas y dicho procesos se ha mencionado en capítulos anteriores pero de igual forma lo mencionaremos a continuación.</p>
+            <br><br>
+      <div class="w3-row">
+        <div class="w3-col m12 w3-center w3-padding-large">
+          <p><b><i class="w3-margin-right"></i>Diagrama de Flujo SIA Producción</b></p><br>
+          <img src="imagenes/diagramas/2017%2005%2012%20Diagrama%20de%20Arquitectura%20Pampa%20SIA_P_V15.jpg" class="w3-round w3-centerw3-image w3-hover-opacity-off" alt="Diagrama de Flujo SIA Producción">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Batch -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center"><strong>Procesos Batch</strong></h3>
+      <h4 class="w3-justify">Procesos para Cambios de Sesión SIA.</h4>
+      <p class="w3-justify"><strong>- Diario: </strong>proceso de mantenimiento de las tablas donde guarda las operaciones diarias.</p>
+      <p class="w3-justify"><strong>- Semanal: </strong>proceso de mantenimiento final del detalle de las operaciones y las mismas las almacenas hasta 15 días.</p>
+      <img src="imagenes/cambioSesion.jpg" alt="Cambio de sesión">
+      <a href="documentos/Cambio%20de%20sesi%C3%B3n%20diario.ppt" target='_blank' title="Cambio de sesion Diario" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre el Cambio de sesion Diario</strong></a><br>
+      <a href="documentos/Cambio%20de%20sesi%C3%B3n%20semanal.ppt" target='_blank' title="Cambio de sesion Semanal" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre el Cambio de sesion Semanal</strong></a>
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Procesos de Actualizacion SAT-SIA.</strong></h3>
+      <p class="w3-justify"><strong>- Tarjetas: </strong>proceso para realizar la carga de tarjetas de nuevos tarjetahabientes.</p>
+      <p class="w3-justify"><strong>- Bloqueos: </strong>proceso para actualizar las condiciones de bloqueos de los tarjetahabientes.</p>
+      <p>Ambos procesos se actualizan en SIA por un archivo que envía el Mainframe vía FTP.</p>
+      <img src="imagenes/tjtBloq.jpg" alt="Cambio de sesión">
+      <a href="documentos/Actualizaci%C3%B3n%20SAT-SIA.ppt" target='_blank' title="Actualización SAT-SIA" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre la Actualización SAT-SIA</strong></a>
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Estadísticas diarias de SIA.</strong></h3>
+      <p class="w3-justify"><strong>- NEW Archivo Estadísticas: </strong>muestra vía correo las estadísticas de las autorizaciones realizadas a la fecha indicada.</p>
+      <p class="w3-justify"><strong>- NEW Archivo Estadísticas Autorizaciones: </strong>muestra vía correo las estadísticas de las transacciones autorizadas realizadas a la fecha indicada.</p>
+      <p class="w3-justify"><strong>- NEW Archivo Estadísticas Autorizaciones por Hora: </strong>muestra vía correo las estadísticas de las autorizaciones realizadas a la fecha indicada y por horas comprendidas en el proceso.</p>
+      <p class="w3-justify"><strong>- NEW Archivo Estadísticas Domiciliaciones por Hora: </strong>muestra vía correo las estadísticas de las autorizaciones de pagos domiciliados realizadas a la fecha indicada y por horas comprendidas en el proceso.</p>
+      <p class="w3-justify"><strong>- NEW Estadísticas Stand-In Canal Off-Line: </strong>muestra vía correo las estadísticas de las autorizaciones realizadas vía Stand-in a la fecha indicada.</p>
+      <p class="w3-justify"><strong>- NEW Archivo Relación 911: </strong>muestra vía correo las estadísticas de las autorizaciones por falla en comunicación realizadas a la fecha indicada.</p>
+      <img src="imagenes/estadisticas.jpg" alt="Cambio de sesión">
+      <a href="documentos/Estad%C3%ADsticas%20SIA.ppt" target='_blank' title="Estadísticas SIA" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre las Estadísticas SIA</strong></a>
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Monitor SIA.</strong></h3>
+      <p class="w3-justify">Realiza una <strong>ALARMA</strong> si algún canald e comunicación dentro de la aplicación presenta un tipo de problemas.</p>
+      <img src="imagenes/monitor.jpg" alt="Cambio de sesión">
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Mantenimiento archivos CINTA en la ruta ficheros.</strong></h3>
+      <p class="w3-justify">Realiza el mantenimiento de las tablas históricas generadas por el cambio de sesión y envia un backup en archivo plano para su backup/delete vía Veritas NetBackup.</p>
+      <img src="imagenes/mantCinta.jpg" alt="Cambio de sesión">
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Procesos SAFE.</strong></h3>
+      <p class="w3-justify">Genera un archivo donde guarda la información necesaria o requerida por cada franquicia para que puedan determinar si cada una de operaciones puedan ser un posible fraude.</p>
+      <img src="imagenes/safe.jpg" alt="Cambio de sesión">
+      <br>
+      <hr>
+
+    </div>
+
+
+    <!-- Segundo Parallax -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section Filesystem) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">Filesystem de la aplicación</h3>
+          <p class="w3-justify">La aplicación SIA se divide en tres filesystem rincipales que son las siguientes:</p>
+          <p class="w3-justify"><strong>1.- /aplicacion </strong>se guarda todos los componentes de la aplicación en el cual presta el servicio, dichos componentes se divide en 4 aristas principales:</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>1.1.- /fuentes </strong>reside los componentes origen de la aplicación.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>1.2.- /copys </strong>reside los componentes que estructura la aplicación.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>1.3.- /objetos </strong>reside los componentes resultados de la compilación y son los que se ejecutarán para que la aplicación pueda dar el servicio en sus procesos de tipo batch.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>1.4.- /ejecutables </strong>reside los componentes resultados de la compilación y son los que se ejecutarán para que la aplicación pueda dar el servicio en sus procesos de tipo online.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>1.5.- /configuracion </strong>reside los componentes de configuracion de la aplicación, las mismas se realiza mediante parámetros como las conexiones mediante TCP/IP y puerto de comunicación, el nivel de debug, la cola de comunicación del canal, entre otros.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>1.6.- /ficheros </strong>reside los archivos planos generados por el proceso batch de cambio de seesión SIA.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>1.7.- /dat </strong>reside todos los progrramas shell script que se ejecutan en la aplicación SIA.</p>
+          <p class="w3-justify"><strong>2.- /compila </strong>se aloja todos los componentes a modificar o desarrollar. Es el filesystem donde reside todos lo componentes modificados a compilar. De igual forma reside las cuatro aristas principales:</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>2.1.- /fuentes </strong>reside los componentes origen de la aplicación.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>2.2.- /copys </strong>reside los componentes que estructura la aplicación.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>2.3.- /objetos </strong>reside los componentes resultados de la compilación y son los que se ejecutarán para que la aplicación pueda dar el servicio en sus procesos de tipo batch.</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>2.4.- /ejecutables </strong>reside los componentes resultados de la compilación y son los que se ejecutarán para que la aplicación pueda dar el servicio en sus procesos de tipo online.</p></p>
+          <p class="w3-justify"><strong>3.- /ftp </strong>reside todos los archivos planos generados o compilados donde se guarda toda la información necesaria para ser enviado hacia el Mainframe. Reside dos aristas principales:</p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>3.1.- /envio </strong>reside los archivos generados por SIA, en el cual, contiene la información necesaria y requerida por las franquicias Visa y Mastercard para evaluar las transacciones fraudulentas. Dicho proceso es llamado <i>SAFE.</i></p>
+          <div class="col-md-1"></div><p class="w3-justify"><strong>3.1.- /repcecion </strong>reside los archivos generados por el Mainframe, en el cual, contiene la información necesaria para realizar la carga de tarjeta de tarjetahabientes nuevos y la actualización del status de las tarjetas de crédito disponibles de los tarjetahabientes.</p>
+    </div>
+
+
+    <!-- Separator Parallax -->
+    <div class="bgimg-sep w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section Administración) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center"><i>cpmenu</i></h3>
+        <p class="w3-justify">Menú desarrollado en shell script donde se realiza la conexión por módulo que interactua la aplicación y las conexiones hacia el THALES y franquicias.</p>
+        <p><a href="documentos/CPMENU%20para%20bajar%20y%20subir%20SIA.ppsx" target='_blank' title="cpmenu SIA" style="color:black;"><strong>Click aquí para descargar el documento Power Point donde describe como bajar y subir los servicios del cpmenu</strong></a></p>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col m12 w3-center w3-padding-large">
+          <p><b><i class="w3-margin-right"></i>Esquema de Conexión TCP/IP Desarrollo</b></p><br>
+          <img src="imagenes/cpmenu.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="cpmenu">
+        </div>
+    </div>
+      <hr>
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center"><i>cpsql</i></h3>
+        <p class="w3-justify">Conexión hacia la base de datos alojado en Oracle9i, donde realiza el llamado hacia un usuario y password creado por unas variables en el entorno del sistema operativo.</p>
+        <p><a href="documentos/SIA-Diccionario%20de%20Datos.doc" target='_blank' title="Diccionario de Datos SIA" style="color:black;"><strong>Click aquí para descargar el Diccionario de Datos SIA</strong></a></p>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col m12 w3-center w3-padding-large">
+          <p><b><i class="w3-margin-right"></i>Esquema de Conexión Oracle9i Línea de Comandos</b></p><br>
+          <img src="imagenes/cpsql.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="cpsql">
+        </div>
+      </div>
+      <hr>
+      <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center"><i>runmqsc QV1P</i></h3>
+        <p class="w3-justify">Entrada de conexión hacia la línea de comandos de los canales MQ. Dicho canal es para realizar la conexión y transaccionar hacia el Mainframe, cabe destacar que la cola MQ es el QV1P y se determina en dos aristas:</p>
+        <p class="w3-justify"><strong>MQGET o SVR: </strong>Canal MQ donde se envia todas las operaciones hacia de Mainframe.</p>
+        <p class="w3-justify"><strong>RECEIVE o RQSTR: </strong>Canal MQ donde se recibe todas las operaciones provenientes del Mainframe.</p>
+        <p><a href="documentos/Arquitectura_mq_CONEXI%C3%93N_v.0.4%20recibida%2027-05-2002.doc" target='_blank' title="Arquitectura MQ Conexión" style="color:black;"><strong>Click aquí para descargar el documento Power Point donde describe la Arquitectura MQ Conexión</strong></a></p>
+        <p><a href="documentos/Manual%20de%20conexi%C3%B3n%20-%20Plataformas%20emisoras.doc" target='_blank' title="Manual de Conexión MQ" style="color:black;"><strong>Click aquí para descargar el documento Power Point donde describe el Manual de Conexión MQ</strong></a></p>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col m12 w3-center w3-padding-large">
+          <p><b><i class="w3-margin-right"></i>Ejecución del shell script "runmqsc QV1P"</b></p><br>
+          <img src="imagenes/runmq.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="runmqsc">
+        </div>
+      </div>
+      <hr>
+
+
+    <!-- Separator Parallax -->
+    <div class="bgimg-sep w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Final Descarga) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">Releases</h3>
+          <p class="w3-justify">Tanto la franquicia Visa como Mastercard realiza unas actualizaciones en sus sistema, llamado releases.</p>
+          <p class="w3-justify">Actualmente, la franquicia Visa se encuentra en su releases 17.2 en el cual contiene el siguiente documento:</p>
+          <a href="documentos/Releases%20Visa%20-%20Carta%20Tecnica%201017-0118-GTLIG-effective-jun15-2017.pdf" target='_blank' title="Releases 17.2 Visa" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre Releases 18.2 Visa</strong></a>
+          <hr>
+    </div>
+    <hr>
+
+
+    <!-- Separator Parallax -->
+    <div class="bgimg-sep w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Modelo de Datos) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">Modelo de Datos</h3>
+          <p class="w3-justify">Un diccionario de datos, o repositorio de metadatos, como lo define el IBM Dictionary of Computing, un repositorio centralizado de información sobre datos tales como significado, relación con otros datos, origen, uso y formato.</p>
+          <hr>
+          <p class="w3-justify">A continuación le facilitamos un archivo comprimido .rar donde contiene toda la información necesaria en cuanto a la estructura de datos y la descripción de cada una de ella:</p>
+          <a href="documentos/MODELO%20DE%20DATOS.rar" target='_blank' title="Modelo de Datos" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre el Modelo de Datos</strong></a>
+          <hr>
+    </div>
+    <hr>
+
+
+<!-- Separator Parallax -->
+    <div class="bgimg-sep w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Modelo de Datos) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">EMV</h3>
+          <p class="w3-justify"><strong>EMV</strong> es un estándar de interoperabilidad de tarjetas IC ("Tarjetas con circuito integrado") y TPV con soporte de circuito integrado, para la autentificación de pagos mediante tarjetas de crédito y débito. El nombre EMV es un acrónimo de <strong>"Europay MasterCard VISA"</strong>, las tres compañías que inicialmente colaboraron en el desarrollo del estándar. Los sistemas de tarjeta IC basados en EMV están introduciéndose de forma escalonada en todo el mundo..</p>
+          <hr>
+          <p class="w3-justify">A continuación le facilitamos un archivo comprimido .rar donde contiene toda la información necesaria en cuanto a proceso EMV</p>
+          <a href="documentos/Full%20Grade.rar" target='_blank' title="Proceso EMV" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre el proceso EMVs</strong></a>
+          <p class="w3-justify"><strong>EMV</strong> en SIA, se puede verificar a traves de un método de control sobre unos archivos planos en el servidor de aplicación y visualizarlo bajo el siguiente esquema</p>
+          <hr>
+          <p class="w3-justify">A continuación le facilitamos un archivo comprimido .rar donde contiene toda la información necesaria en cuanto a proceso EMV</p>
+          <a href="documentos/CSTT%20Datos%20del%20chip%20usados%20en%20Fullgrade%20para%20Thales.docx" target='_blank' title="Esquema EMV" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre el Esquema EMVs</strong></a>
+          <hr>
+    </div>
+    <hr>
+
+
+<!-- Separator Parallax -->
+    <div class="bgimg-sep w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Perfilamiento) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">EMV</h3>
+          <p class="w3-justify">Es dar privilegios a cada usuario registrado en la aplicación para que puede ejecutar determinadas acciones.</p>
+          <hr>
+          <a href="documentos/Perfilamiento.pdf" target='_blank' title="Perfilamineto SIA" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre el Esquema de Perfilamiento de usuario SIA</strong></a>
+          <hr>
+    </div>
+    <hr>
+
+
+<!-- Separator Parallax -->
+    <div class="bgimg-sep w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Perfilamiento) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">Esquema de Respaldo</h3>
+          <p class="w3-justify">La misma se realiza tanto de archivos planos como de la estructura y datos de la base de datos, la misma se realiza por la aplicación Veritas Netbackup y su esquema de respaldo es de la siguiente manera.</p>
+          <hr>
+          <a href="documentos/Respaldo%20SIA%20Produccion.ppt" target='_blank' title="Esquema de Respaldo" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre el Esquema de Respaldo</strong></a>
+          <hr>
+    </div>
+    <hr>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>SUBIR</a>
+      <p>Elaborado por Denis Alayza</p>
+    </footer>
+
+
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Cambio de estilo del navbar
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+    // Use del toggle en menu pequeño en dispositivos moviles
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+
+</body>
+</html>

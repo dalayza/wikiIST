@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<title>Atencion de Incidencias</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="min/w3.css">
+    <link rel="stylesheet" href="min/googleapis.css">
+    <link rel="stylesheet" href="min/font.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+<body>
+
+
+    <!-- Navbar (top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small">INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+                <a href="SiaVisual.html" class="w3-bar-item w3-button">SiaVisual</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+
+    <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button"><i class=""></i> INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd.html" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Logo -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-small">Atención de Incidencias</span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-large">Incidencias</span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">Pasos para la atención de incidencias en SIA Producción</h3>
+      <p class="w3-justify">A continuación describiremos paso a paso de como se debe atender en una situación de incidencia en el aplicativo SIA ambiente de producción. Para ello, nombraremos paso a paso con un orden de atención para la verificación y análisis de la incidencia reportada:</p>
+      <br>
+
+      <p class="w3-justify"><strong>1.- Servicios Desconectados: </strong></p>
+      <p class="w3-justify">- Lo primero que se debe realizar es verificar la desconexión del canal o de los canales. Para ello, verificamos las conexiónes de cada canal de comunicación en el menú ingresando con el comando <em><strong>cpmenu</strong></em>.</p>
+      <p class="w3-justify">Ahora, si bien se puede observar que alguna conexión presenta el mensaje de error en el campo de observaciones, debemos llamar al personal de <em><strong>GRUPO OPERACIONES</strong></em> para que realice el respectivo sing on al módulo afectado y así volver a reestablecer la comunicación.</p>
+      <p class="w3-justify">Si aún no podemos logramos establecer la comunicación o servicio, verificamos acceder al servicio servidor con el comando <strong>telnet "IP" "PORT"</strong></em> y verificar que la comunicación se haya establecido por dicho puerto.</p>
+      <p class="w3-justify">En caso que ninguno de los pasos anteriores no aplique, debemos de comunicarnos con el personal de <em><strong>FIREWALL y PERIMETRO</strong></em> para verificar la traza de comunicación entre ambos servicios.</p>
+      <br>
+
+      <p class="w3-justify"><strong>2.- DBA Caído: </strong></p>
+      <p class="w3-justify">- Se verifica la disponibilidad de la base de datos. Para ello, se debe ejecutar el comando <em><strong>cpsql</strong></em>, si con el comando ejecutado logramos ingresar a la pantalla de código de la base de datos, quiere decir que dicha base de datos se encuentra correcta. De igual forma y para evitar riesgo, podemos consultar una tabla con el query <em><strong>desc tta080</strong></em> y consultamos los registros con el query <em><strong>select * from tta080 where rownum &lt 2;</strong></em>.</p>
+      <p class="w3-justify">Otra manera quela aplicación SIA reconozca que la base de datos se encuentra corrupta, es cuando necesitamos subir la aplicación en la opción <em><strong>cpmenu</strong></em> y la misma muestra un mensaje de <strong>ORACLE NO DISPONIBLE.</strong></em></p>
+      <p class="w3-justify">Cualquier falla relacionada con la base de datos, debe ser reportada al personal de <em><strong>DBA_PM</strong></em>.</p>
+      <br>
+
+      <p class="w3-justify"><strong>3.- No hay respuesta del host: </strong></p>
+      <p class="w3-justify">- Si al verificar las operaciones vivas e indican <em><strong>NO HAY RESPUESTA DEL HOST</strong></em> y de igual forma al verificar los logs de cada transacción no logramos visualizar el mensaje de respuesta de MTI 0110, pudiera ser que el canal de comunicación <em><strong>COLAS MQ</strong></em> de request se encuentra caído. Para ellos, se debe ingresar a la línea de comado de las colas QV1P de SIA con el comando <em><strong>runmqsc QV1P</strong></em> y levantamos la el canal caído; primero se verifica la cola caída con el comando <em><strong>dis chs (*)</strong></em>, verificamos el canal caído y luego lo levantamos con el comando <em><strong>start channel (QV0PTOQV1P.CH.P)</strong></em> o el comando <em><strong>start channel (QV1PTOQV0P.CH.P)</strong></em> dependiendo del canal afectado.</p>
+      <br>
+
+      <p class="w3-justify"><strong>4.- Error cryptográfico no reintentar: </strong></p>
+      <p>Si al verificar las operaciones indican el mensaje de respuesta <strong><em>ERROR DE CRYPTOGRAFIA NO REINTENTAR</strong></em>, lo que debemos de hacer es ingresar a la ruta <strong><em>/compila/bin</strong></em> y ejecutar el comando <strong><em>rmcolas.sh</strong></em>, allí debe indicar la cola que ha tenido afectación de transaccionalidad y por el cual debemos de limpiar indicando <strong><em>Yes</strong></em> en la limpieza de las colas <strong><em>HSIM HCRYP HCRYTO</strong></em>.</p>
+      <br>
+
+      <p class="w3-center"><strong>Todo servicio se debe confirmar con su respectivo porcentaje de aprobación informado por cada una de las franquicias.</strong></p>
+      <p class="w3-wide"><i class="fa fa-cc-mastercard"></i>Mastercard</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-cc-visa"></i>Visa</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-cc-stripe"></i>Consorcio Credicard</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+    </div>
+
+
+    <!-- Items -->
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <span class="w3-xlarge">Recuerda que aunque no estemos en servicio con cada una de las franquicias Visa y Mastercard y ellos puedan autorizar por nosotros a través del método Stan-In, dicho servicio genera costo adicional para la institución financiera.</span><br>
+        </div>
+    </div>
+
+
+    <!-- Segundo Parallax -->
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section Mensajería ISO8583) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">ARCHIVO DE CONFIGURACION SIA</h3>
+          <p class="w3-justify">La información se puede apreciar los parámetros asignados a cada una de lasconexiones que intervienen en el proceso de autorización conectados al aplicativo SIA. Para lograr visualizarlo, debes descargar el siguiente archivo de texto:</p>
+          <a href="documentos/tahgnetiCFG.txt" target='_blank' title="tahgnetiCFG" style="color:black;"><strong>Click aquí para descargar el archivo de configuracion tahgnetiCFG</strong></a>
+          <p class="w3-justify">Dicho archivo de configuración se puede comparar con el que se encuentra ubicado en el servidor de aplicaciones ubicado en la ruta <strong><em>/aplicacion/pampa/src/configuracion</strong></em>.</p>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>SUBIR</a>
+      <p>Elaborado por Denis Alayza</p>
+    </footer>
+
+
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Cambio de estilo del navbar
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+    // Use del toggle en menu pequeño en dispositivos moviles
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+
+</body>
+</html>

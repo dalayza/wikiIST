@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<title>Visa Test System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="min/w3.css">
+    <link rel="stylesheet" href="min/googleapis.css">
+    <link rel="stylesheet" href="min/font.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+<body>
+
+
+    <!-- Navbar (top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small">INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+                <a href="SiaVisual.html" class="w3-bar-item w3-button">SiaVisual</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+
+    <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button"><i class=""></i> INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd.html" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Logo -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-small">Visa Test System</span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-large">VTS</span>
+      </div>
+    </div>
+
+
+    <!-- Container 1 (Section) -->
+    <div class="container">
+          <br>
+              <h3 class="w3-center">Visa Test System</h3>
+              <a href="#seccionConex" class="btn btn-primary" data-toggle="collapse">1.- Conexión del VTS.</a>
+              <div class="collapse" id="seccionConex">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Lo primero que debemos realizar es la conexión del VTSa dejar el puerto de comunicación activo opara conexión del emisor (SIA).</p>
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Conexión del VTS</b></p><br>
+                          <img src="imagenes/VTS/1%20-%201.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Conexión del VTS">
+                        </div><br>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Conexión del SIA hacia el VTS, opción 1d</b></p><br>
+                          <img src="imagenes/VTS/1%20-%202.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Conexión del VTS">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Sign on desde el VTS</b></p><br>
+                          <img src="imagenes/VTS/1%20-%203.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Conexión del VTS">
+                        </div>
+                    </div>
+                    <p class="w3-justify">En estos momentos ya se encuentran todos los servicios disponible para establecer la conexión.</p>
+                  </div>
+              </div>
+    <br><br>
+
+
+    <!-- Container 2 (Section) -->
+              <a href="#seccionCargarTJTSIA" class="btn btn-primary" data-toggle="collapse">2.- Carga TDC SIA.</a>
+              <div class="collapse" id="seccionCargarTJTSIA">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Para poder realizar la Carga de TDC en el aplicativo SIA, se puede realizar a través de las siguientes opciones:</p>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Ingresamos al cpsql</b></p><br>
+                          <img src="imagenes/VTS/2%20-%201.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Carga TDC SIA">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Ejecutamos el siguiente query para la carga de tarjeta de nuevos clientes en el sistema SIA</b></p><br>
+                          <img src="imagenes/VTS/2%20-%202.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Carga TDC SIA">
+                        </div>
+                        <p class="w3-justify">Los puntos anteriormente mencionados aplica para cualquier ambiente.</p>
+                  </div>
+              </div>
+    <br><br>
+
+    <!-- Container 3 (Section) -->
+              <a href="#seccionCargarTJTVTS" class="btn btn-primary" data-toggle="collapse">2.- Carga TDC VTS.</a>
+              <div class="collapse" id="seccionCargarTJTVTS">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Para poder realizar la Carga de TDC en el aplicativo SIA, se puede realizar a través de las siguientes opciones:</p>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Ingresamos VTS y click opción "Variables Manager"</b></p><br>
+                          <img src="imagenes/VTS/3%20-%201.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Carga TDC VTS">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Modificamos los parámetros del TRACK2 de la tarjeta</b></p><br>
+                          <img src="imagenes/VTS/3%20-%202.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Carga TDC VTS">
+                        </div>
+                        <p class="w3-justify">Cabe destacar que el profile de la tarjeta se guarda con la nomenclatura <strong>YYYYMMDD_PAN</strong></p>
+                        <p class="w3-justify">Los puntos anteriormente mencionados aplica para cualquier ambiente.</p>
+                  </div>
+              </div>
+    <br><br>
+
+    <!-- Container 4 (Section) -->
+              <a href="#seccionEjecTRX" class="btn btn-primary" data-toggle="collapse">4.- Ejecución de la transacción.</a>
+              <div class="collapse" id="seccionEjecTRX">
+                  <br>
+                  <div class="well">
+                    <p class="w3-justify">Se ejecuta la transacción de acuerdo a lo solicitado. En primer lugar se debe conocer el tipo de transacción (compra por POS, retiro por ATM, e-Commerce), para ello, cada una de ellas se encuentra detallada por portafolio y para la ejeución de la misma se explica a continuación:</p>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Seleccionamos el tipo de transacción y ingresamos a sus propiedades</b></p><br>
+                          <img src="imagenes/VTS/4%20-%201.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Carga TDC VTS">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Seleccionamos la ubicación del adquiriente</b></p><br>
+                          <img src="imagenes/VTS/4%20-%202.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Carga TDC VTS">
+                        </div>
+                        <div class="w3-col m12 w3-center w3-padding-large">
+                          <p><b><i class="w3-margin-right"></i>Finalmente seleccionamos el tipo de tarjeta de crédito a ejecutar</b></p><br>
+                          <img src="imagenes/VTS/4%20-%203.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Carga TDC VTS">
+                        </div>
+                        <p class="w3-justify">La ejecución se realiza de la misma manera indiferentemente del tipo de transacción.</p>
+                  </div>
+              </div>
+    <br><br>
+
+
+<!-- Separator Parallax -->
+    <div class="bgimg-sep w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Perfilamiento) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">Instalación AES</h3>
+          <p class="w3-justify">Para realizar la configuración AES se debe tomar en cuenta los siguientes parámetros.</p>
+          <a href="documentos/Formulario%20del%20Miembro%20para%20Instalaci%C3%B3n%20del%20AES.pdf" target='_blank' title="Instalación EAS" style="color:black;"><strong>Click aquí para descargar el documento pdf sobre Instalación EAS</strong></a>
+          <hr>
+    </div>
+    <hr>
+
+
+    <!-- Container (Perfilamiento) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h3 class="w3-center">Conexiones Simuladores</h3>
+          <p class="w3-justify">Si desea conocer más sobre la conexiones de los simuladores, la misma se puede apreciar bajo los siguientes esquemas de conexión:</p>
+          <img src="documentos/Conexiones%20Simuladores%201.JPG" class="w3-round w3-image w3-hover-opacity-off" alt="Conexiones Simuladores">
+          <img src="documentos/Conexiones%20Simuladores%202%20.JPG" class="w3-round w3-image w3-hover-opacity-off" alt="Conexiones Simuladores">
+          <hr>
+    </div>
+    <hr>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>SUBIR</a>
+      <p>Elaborado por Denis Alayza</p>
+    </footer>
+
+
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Cambio de estilo del navbar
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+    // Use del toggle en menu pequeño en dispositivos moviles
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <script src="css/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<title>SIA General</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="min/w3.css">
+    <link rel="stylesheet" href="min/googleapis.css">
+    <link rel="stylesheet" href="min/font.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+<body>
+
+
+    <!-- Navbar (top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small">INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="Simuladores"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+
+    <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button"><i class=""></i> INICIO</a>
+        <a href="descripcion.html" class="w3-bar-item w3-button"><i class=""></i> DESCRIPCION</a>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" title="SIA"> SIA<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="general.html" class="w3-bar-item w3-button">General</a>
+                <a href="usuario.html" class="w3-bar-item w3-button">Usuario</a>
+                <a href="operaciones.html" class="w3-bar-item w3-button">Operaciones</a>
+                <a href="SiaVisual.html" class="w3-bar-item w3-button">SiaVisual</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Ambientes"> AMBIENTES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="ambDes.html" class="w3-bar-item w3-button">Desarrollo</a>
+                <a href="ambCal.html" class="w3-bar-item w3-button">Calidad</a>
+                <a href="ambProd.html" class="w3-bar-item w3-button">Producción</a>
+              </div>
+        </div>
+        <div class="w3-dropdown-hover">
+              <button class="w3-button" title="Simuladores"> SIMULADORES<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="VTA.html" class="w3-bar-item w3-button">Visa Test Switch (VTS)</a>
+                <a href="MAS.html" class="w3-bar-item w3-button">Mastercard Authorization Simulator (MAS)</a>
+                <a href="MDFS.html" class="w3-bar-item w3-button">Mastercard Debit Finantial Switch (MDFS)</a>
+              </div>
+        </div>
+        <a href="attInc.html" class="w3-bar-item w3-button"><i class=""></i> ATENCION DE INCIDENCIAS</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Logo -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-small">Sistema Integrado de Autorizaciones - General</span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-large">SIA General</span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">Sistema Integrado de Autorizaciones (SIA)</h3>
+      <p class="w3-justify">Como ya sabemos, SIA es el front autorizador de tarjetas de créditos en la institución Banco de Venezuela.</p>
+      <p class="w3-justify">Actulamente, existe 3 canales de comunicación que viaja las transacciones provenientes de la red que son las siguientes:</p>
+      <br>
+
+      <img src="imagenes/ccr.png" alt="Consorcio Credicard">
+      <p class="w3-justify"><strong>Consorcio Credicard </strong></p>
+      <p class="w3-justify">- Procesa operaciones nacionales POS terminales propios.</p>
+      <p class="w3-justify">- Procesa operaciones de tarjeta de crédito Visa y Mastercard.</p>
+      <br>
+
+      <img src="imagenes/visa.png" alt="Consorcio Credicard">
+      <p class="w3-justify"><strong>Visa </strong></p>
+      <p class="w3-justify">- Procesa operaciones de tarjeta de crédito Visa.</p>
+      <p class="w3-justify">- Procesa operaciones nacionales ATM terminales propios.</p>
+      <p class="w3-justify">- Procesa operaciones nacionales POS y ATM otros terminales.</p>
+      <p class="w3-justify">- Procesa operaciones internacionales POS y ATM otros terminales.</p>
+      <br>
+
+      <img src="imagenes/mastercard.png" alt="Consorcio Credicard">
+      <p class="w3-justify"><strong>Mastercard </strong></p>
+      <p class="w3-justify">- Procesa operaciones de tarjeta de crédito Mastercard.</p>
+      <p class="w3-justify">- Procesa operaciones nacionales ATM terminales propios.</p>
+      <p class="w3-justify">- Procesa operaciones nacionales POS y ATM otros terminales.</p>
+      <p class="w3-justify">- Procesa operaciones internacionales POS y ATM otros terminales.</p>
+      <br>
+    </div>
+    </div>
+
+
+    <!-- Segundo Parallax -->
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Container (Section Mensajería ISO8583) -->
+    <div class="w3-container">
+        <div class="w3-content w3-container w3-padding-64" id="">
+              <h3 class="w3-center">Flujo Transaccional SIA</h3>
+        </div>
+        <div class="w3-container w3-center">
+            <img src="imagenes/Flujo%20Transaccional%20SIA.png" alt="Flujo Transaccional SIA">
+        </div>
+    </div>
+
+
+    <!-- Tercer Parallax -->
+    <div class="bgimg-5 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide"></span>
+      </div>
+    </div>
+
+
+    <!-- Batch -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center"><strong>Procesos Batch</strong></h3>
+      <h4 class="w3-justify">Procesos para Cambios de Sesión SIA.</h4>
+      <p class="w3-justify"><strong>- Diario: </strong>proceso de mantenimiento de las tablas donde guarda las operaciones diarias.</p>
+      <p class="w3-justify"><strong>- Semanal: </strong>proceso de mantenimiento final del detalle de las operaciones y las mismas las almacenas hasta 15 días.</p>
+      <img src="imagenes/cambioSesion.jpg" alt="Cambio de sesión">
+      <br>
+      <a href="documentos/CAMBIOS%20DE%20SESION.rar" target='_blank' title="Cambios de Sesión SIA" style="color:black;"><strong>Click aquí para descargar el documento pdf Cambios de Sesión SIA</strong></a>
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Procesos de Actualizacion SAT-SIA.</strong></h3>
+      <p class="w3-justify"><strong>- Tarjetas: </strong>proceso para realizar la carga de tarjetas de nuevos tarjetahabientes.</p>
+      <p class="w3-justify"><strong>- Bloqueos: </strong>proceso para actualizar las condiciones de bloqueos de los tarjetahabientes.</p>
+      <p>Ambos procesos se actualizan en SIA por un archivo que envía el Mainframe vía FTP.</p>
+      <img src="imagenes/tjtBloq.jpg" alt="Cambio de sesión">
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Estadísticas diarias de SIA.</strong></h3>
+      <p class="w3-justify"><strong>- NEW Archivo Estadísticas: </strong>muestra vía correo las estadísticas de las autorizaciones realizadas a la fecha indicada.</p>
+      <p class="w3-justify"><strong>- NEW Archivo Estadísticas Autorizaciones: </strong>muestra vía correo las estadísticas de las transacciones autorizadas realizadas a la fecha indicada.</p>
+      <p class="w3-justify"><strong>- NEW Archivo Estadísticas Autorizaciones por Hora: </strong>muestra vía correo las estadísticas de las autorizaciones realizadas a la fecha indicada y por horas comprendidas en el proceso.</p>
+      <p class="w3-justify"><strong>- NEW Archivo Estadísticas Domiciliaciones por Hora: </strong>muestra vía correo las estadísticas de las autorizaciones de pagos domiciliados realizadas a la fecha indicada y por horas comprendidas en el proceso.</p>
+      <p class="w3-justify"><strong>- NEW Estadísticas Stand-In Canal Off-Line: </strong>muestra vía correo las estadísticas de las autorizaciones realizadas vía Stand-in a la fecha indicada.</p>
+      <p class="w3-justify"><strong>- NEW Archivo Relación 911: </strong>muestra vía correo las estadísticas de las autorizaciones por falla en comunicación realizadas a la fecha indicada.</p>
+      <img src="imagenes/estadisticas.jpg" alt="Cambio de sesión">
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Monitor SIA.</strong></h3>
+      <p class="w3-justify">Realiza una <strong>ALARMA</strong> si algún canald e comunicación dentro de la aplicación presenta un tipo de problemas.</p>
+      <img src="imagenes/monitor.jpg" alt="Cambio de sesión">
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Mantenimiento archivos CINTA en la ruta ficheros.</strong></h3>
+      <p class="w3-justify">Realiza el mantenimiento de las tablas históricas generadas por el cambio de sesión y envia un backup en archivo plano para su backup/delete vía Veritas NetBackup.</p>
+      <img src="imagenes/mantCinta.jpg" alt="Cambio de sesión">
+      <br>
+      <hr>
+
+      <h3 class="w3-justify"><strong>Procesos SAFE.</strong></h3>
+      <p class="w3-justify">Genera un archivo donde guarda la información necesaria o requerida por cada franquicia para que puedan determinar si cada una de operaciones puedan ser un posible fraude.</p>
+      <img src="imagenes/safe.jpg" alt="Cambio de sesión">
+      <br>
+      <hr>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>SUBIR</a>
+      <p>Elaborado por Denis Alayza</p>
+    </footer>
+
+
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Cambio de estilo del navbar
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+    // Use del toggle en menu pequeño en dispositivos moviles
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+[         "Conexion ATALLA"
+#id=ATAL
+#modo=clisersinc
+#dir=/aplicacion/pampa/src/dat
+#debug=1
+#ip=10.1.20.3
+#puerto=7000
+#timeout=1000
+#maq=Atalla
+]
+
+[         "Conexion LYNX (Simulador)"
+id=LYNP
+modo=clisersinc
+dir=/cpsp/paq/sia/dat
+debug=1
+ip=151.184.80.125
+puerto=5028
+timeout=20
+maq=Pruebasneti
+]
+
+[         "Conexion CRYPTOPROCESADOR"
+id=ATAL
+modo=clisersinc
+dir=/aplicacion/pampa/src/dat
+debug=1
+ip=10.2.2.254
+puerto=8400
+timeout=1000
+maq=Atalla
+FinTimeOut=1
+reintento=60000
+]
+
+
+[         "AMEX EMISOR POS"
+id=AMEP
+modo=cliser
+dir=/aplicacion/pampa/src/dat
+debug=1
+ip=172.16.111.33
+puerto=11807
+timeout=20000
+maq=AmexEmisorPOS
+colainc=/aplicacion/pampa/src/colas/TA00
+reintento=180000
+]
+
+[         "AMEX EMISOR ATM"
+id=AMEA
+modo=cliser
+dir=/aplicacion/pampa/src/dat
+debug=1
+ip=172.16.111.33
+puerto=11806
+timeout=20000
+maq=AmexEmisorATM
+colainc=/aplicacion/pampa/src/colas/TA00
+reintento=180000
+]
+
+[         "Conexion CONSORCIO CREDICARD EMISOR"
+id=CCEM
+modo=cliser
+dir=/aplicacion/pampa/src/dat
+debug=1
+#ip=10.5.71.3
+puerto=8942
+ip=10.97.1.12
+timeout=1000
+maq=ConsorcioCredEmi
+colainc=/aplicacion/pampa/src/colas/TA00
+reintento=180000
+]
+
+[         "Conexion MASTER EMISOR"
+id=RMCE
+modo=cliser
+dir=/aplicacion/pampa/src/dat
+debug=1
+ip=10.112.18.55
+#Puerto actual 
+#puerto=6003
+#Puerto nuevo
+puerto=6038
+timeout=1000
+maq=MasterCreditoEmisor
+colainc=/aplicacion/pampa/src/colas/TA00
+reintento=180000
+]
+
+[         "Conexion MASTER EMISOR 2"
+id=RMC2
+modo=cliser
+dir=/aplicacion/pampa/src/dat
+debug=1
+ip=10.112.18.56
+#Puerto nuevo 
+puerto=6038 
+timeout=1000
+maq=MasterCreditoEmisor2
+colainc=/aplicacion/pampa/src/colas/TA00
+reintento=180000
+]
+
+
+[         "Conexion VISA EMISOR 1"
+id=RVIS
+modo=cliser
+dir=/aplicacion/pampa/src/dat
+debug=1
+#PRIMARIO
+ip=10.1.8.2
+puerto=9081
+#SECUNDARIO
+#ip=10.1.8.3
+#puerto=9091
+timeout=1000
+maq=VisaEmisor
+colainc=/aplicacion/pampa/src/colas/TA00
+reintento=180000
+]
+
+[         "Conexion VISA EMISOR 2"
+id=RVI2
+modo=cliser
+dir=/aplicacion/pampa/src/dat
+debug=1
+#SECUNDARIO
+ip=10.1.8.3
+puerto=9091
+#PRIMARIO
+#ip=10.1.8.2
+#puerto=9081
+timeout=1000
+maq=VisaEmisor2
+colainc=/aplicacion/pampa/src/colas/TA00
+reintento=180000
+]
+
+
+[         "Conexion SIMULADOR THALES"
+id=THAL
+modo=clisersinc
+dir=/aplicacion/pampa/src/dat
+debug=1
+ip=180.183.156.199  
+puerto=1500
+timeout=20
+maq=Thales
+]
